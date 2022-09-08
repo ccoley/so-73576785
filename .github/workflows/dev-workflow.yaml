@@ -13,8 +13,6 @@ jobs:
       - shell: bash
         name: Push changes to test branch
         run: |
-          git config --global user.email "me@mydomain.com"
-          git config --global user.name "myAccountName"
           git init
           git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"
           git branch -M test
