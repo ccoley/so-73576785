@@ -13,10 +13,7 @@ jobs:
       - shell: bash
         name: Push changes to test branch
         run: |
-          git init
-          git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"
           git branch -M test
-          git add --all
           git push --force -u origin test
 
 # vi: set ts=2 sw=2 et ft=yaml:
